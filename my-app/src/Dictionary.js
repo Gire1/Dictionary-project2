@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import axios from "axios";
 import "./Dictionary.css";
 import Results from "./Results";
 
@@ -43,6 +44,10 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
+      <section>
+        <h1>
+          What word do you want to look up?
+          </h1>
       <form onSubmit={search}>
         <input
           type="search"
@@ -53,6 +58,10 @@ export default function Dictionary() {
           {isLoading ? "Searching..." : "Search"}
         </button>
       </form>
+      <div className="hint">
+        Suggested words: sunset, wine, yoga, forest...
+      </div>
+      </section>
       {error && <p className="error-message">{error}</p>}
       {result && <Results results={result} />}
     </div>
