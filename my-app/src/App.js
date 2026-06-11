@@ -13,9 +13,7 @@ export default function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          <small>Coded by Grace Chifamba</small>
-          
-          and open-sourced at{" "}
+          <small>Coded by Grace Chifamba and open-sourced at </small>{" "}
           <a
             href="https://github.com/Gire1/Dictionary-project2"
             target="_blank"
