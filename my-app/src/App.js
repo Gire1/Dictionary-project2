@@ -14,6 +14,7 @@ export default function App() {
         </main>
         <footer className="App-footer">
           <small>Coded by Grace Chifamba</small>
+          
           and open-sourced at{" "}
           <a
             href="https://github.com/Gire1/Dictionary-project2"
